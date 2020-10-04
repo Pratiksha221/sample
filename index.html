@@ -18,22 +18,7 @@
   <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-    <script>
-        $( function() {
-          $( "#datepicker" ).flatpickr({
-            altInput: true,
-            dateFormat: "Y-m-d",
-            minDate: "today",
-          });
-          
-        } );
-        $( function() {
-          $( "#datepicker2" ).flatpickr({
-            altInput: true,
-            dateFormat: "Y-m-d",
-          });
-        } );
-        </script>
+   
         
    
   </head>
@@ -79,7 +64,8 @@
     <br /><br /><br />
     
     <form>
-        <div class="form-row container">
+      <div class="container">
+        <div class="row">
           <div class="col-lg-2">
             <select id="inputState" class="form-control">
                 <option selected>Pick up location</option>
@@ -131,7 +117,30 @@
             <button type="button" class="btn btn-success">Search bikes</button>
           </div>
         </div>
+      </div>
       </form>
     </div>
+    <script>
+        $( function() {
+          $( "#datepicker" ).flatpickr({
+            altInput: true,
+            dateFormat: "Y-m-d",
+            minDate: "today",
+          });
+        } );
+        jQuery('#datepicker').on('input', function() {
+             pickupDate = document.getElementById("datepicker").value
+            alert(pickupDate)
+        });
+       
+       
+        $( function() {
+          $( "#datepicker2" ).flatpickr({
+            altInput: true,
+            dateFormat: "Y-m-d",
+           
+          });
+        } );
+        </script>
   </body>
 </html>
