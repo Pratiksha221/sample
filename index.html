@@ -76,7 +76,7 @@
           </div>
           
           <div class="col-lg-2 col-sm-12">
-            <input type="text" id="datepicker" placeholder ="Pick Up Date" class="form-control">
+            <input type="text" id="datepicker" placeholder ="Pick Up Date" type="text" class="form-control textbox-n">
           </div>
           <div class="col-lg-2 col-sm-12">
             <select id="inputState" class="form-control">
@@ -130,7 +130,7 @@
         } );
         jQuery('#datepicker').on('input', function() {
              pickupDate = document.getElementById("datepicker").value
-            alert(pickupDate)
+            
         });
        
        
