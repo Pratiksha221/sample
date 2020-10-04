@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheelz on the bike</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.css">
+    
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+        $( function() {
+          $( "#datepicker2" ).datepicker();
+        } );
+        </script>
+   
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img
+          src="logo.jpg"
+          width="60"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+         <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Why choose us </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log in / Sign up</a>
+          </li>
+         </ul>
+        </div>
+    </nav>
+    <br /><br /><br />
+    
+    <form>
+        <div class="form-row container">
+          <div class="col-3">
+            <select id="inputState" class="form-control">
+                <option selected>City</option>
+                <option >Panaji</option>
+                <option>Mapusa</option>
+                <option>St Cruz</option>
+                
+              </select>
+          </div>
+          <div class="col-3">
+            <select id="inputState" class="form-control">
+                <option selected>Booking type</option>
+                <option >By Hour</option>
+                <option>By Day</option>
+             </select>
+          </div>
+          <div class="col-2">
+            <input type="text" id="datepicker" placeholder ="enter start date" class="form-control">
+          </div>
+          <div class="col-2">
+            <input type="text" id="datepicker2" placeholder ="enter end date" class="form-control">
+          </div>
+          <div class="col-2">
+            <button type="button" class="btn btn-success">Search bikes</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
